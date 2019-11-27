@@ -1,0 +1,155 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<html>
+<body>
+    <h1 class="text-center" >Mobile Pricing Prediction Form</h1>
+    <br>
+
+<div class="container">
+  <form action="/result" method="POST">
+    <div class="form-group">
+      <label for = "battery_power">Battery Power</label>
+      <input type="text" class="form-control" id="battery_power" name="battery_power" placeholder="Between 500 - 1999"> 
+    </div>
+    
+    <div class="form-group">
+      <label for="blue">Bluetooth</label>
+          <select id="blue" class="form-control" name="blue">
+            <option value="1">Have Bluetooth</option>
+            <option value="0">Doesn't Have Bluetooth</option>
+          </select>
+          
+    </div>
+
+    <div class="form-group">
+      <label for = "clock_speed">Clock Speed</label>
+          <input type="text" class="form-control" id="clock_speed" name="clock_speed" placeholder="between 0.5 - 3"> 
+    </div>
+    
+    <div class="form-group">
+      <label for="dual_sim">Dual SIM</label>
+    <select id="dual_sim" class="form-control" name="dual_sim">
+      <option value="1">Support Dual SIM</option>
+      <option value="0">Doesn't Support Dual SIM</option>
+    </select>
+    
+    </div>
+    
+    <div class="form-group">
+      <label for = "fc">Front Camera Megapixels</label>
+    <input type="text" class="form-control" id="fc" name="fc" placeholder="Between 0 - 19"> 
+    
+    </div>
+    
+
+    <div class="form-group">
+      <label for="four_g">Four G</label>
+    <select id="four_g" class="form-control" name="four_g">
+      <option value="1">Have Four G</option>
+      <option value="0">Doesn't Have Four G</option>
+    </select>
+    
+    </div>
+
+    <div class="form-group">
+       <label for = "int_memory">Memory Internal</label>
+    <input type="text" class="form-control" id="int_memory" name="int_memory" placeholder="between:[2-64]"> 
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "m_dep">Mobile Depth</label>
+    <input type="text" class="form-control" id="m_dep" name="m_dep" placeholder="between:[0.1-1]">
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "mobile_wt">Mobile Width</label>
+    <input type="text" class="form-control" id="mobile_wt" name="mobile_wt" placeholder="between:[80-200]">
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "n_cores">Number of Cores of Processor</label>
+    <input type="text" class="form-control" id="n_cores" name="n_cores" placeholder="between:[1-8]"> 
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "pc">Primary Camera</label>
+    <input type="text" class="form-control" id="pc" name="pc" placeholder="between:[0-20]">
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "px_height">Pixel Resolution Height</label>
+    <input type="text" class="form-control" id="px_height" name="px_height" placeholder="between:[0-1960]">
+    
+    </div>
+    
+    <div class="form-group">
+      <label for = "px_width">Pixel Resolution Width</label>
+    <input type="text" class="form-control" id="px_width" name="px_width" placeholder="between:[500-1999]">
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "ram">RAM</label>
+    <input type="text" class="form-control" id="ram" name="ram" placeholder="between:[256-3999]">
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "sc_h">Screen Height</label>
+    <input type="text" class="form-control" id="sc_h" name="sc_h" placeholder="between:[5-19]">
+    
+    </div>
+
+    <div class="form-group">
+      <label for = "sc_w">Screen Width</label>
+    <input type="text" class="form-control" id="sc_w" name="sc_w" placeholder="between:[0-18]">
+    
+    </div>
+    
+    <div class="form-group">
+      <label for = "talk_time">Talk Time</label>
+    <input type="text" class="form-control" id="talk_time" name="talk_time" placeholder="between:[2-20]">
+    
+    </div>
+    
+
+    <div class="form-group">
+      <label for="three_g">Three G</label>
+    <select id="three_g" class="form-control" name="three_g">
+      <option value="1">Have Three G</option>
+      <option value="0">Doesn't Have Three 3</option>
+    </select>
+    
+    </div>
+    
+
+    <div class="form-group">
+      <label for="touch_screen">Touch Screen</label>
+    <select id="touch_screen" class="form-control" name="touch_screen">
+      <option value="1">Support Touch Screen</option>
+      <option value="0">Doesn't Support Touch Screen</option>
+    </select>
+    
+    </div>
+
+    <div class="form-group">
+       <label for="wifi">WIFI</label>
+    <select id="wifi" class="form-control" name="wifi">
+      <option value="1">Support Wifi</option>
+      <option value="0">Doesn't Support Wifi</option>
+    </select>
+    
+    </div>
+   
+
+    <input type="submit" class= "btn btn-primary"value="Submit">
+  </form>
+</div>
+</body>
+</html>
